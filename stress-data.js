@@ -13,7 +13,6 @@ var stocks = {
     'REL': 0,
     'BIR': 20,
     'LAX': 0,
-    ''
 }
 ws.addEventListener("open", () => {
     console.log("Connection Established!");
