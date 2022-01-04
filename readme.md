@@ -1,9 +1,9 @@
-##Input 
+## Input 
 - socketio connection
-##Logic
+## Logic
 - set triggers
 - check triggers
-##Database
+## Database
 - store triggers
-##Output
+## Output
 - print statement
