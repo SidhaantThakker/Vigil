@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+    <header>
+    <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div>
+            <div>
+                <form action="/triggers" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="options">Type</label>
+                    <input type="radio" name='option' value=">" checked> > 
+                    <input type="radio" name='option' value="=" checked> = 
+                    <input type="radio" name='option' value="<" checked> <
+                    <br>
+                    <label for="value">Value</label>
+                    <input type="text" id="value" name="value">
+                    <br>
+                    <button type="submit" class="btn btn-success btn-sm">Submit</button>
+                </form>
+            </div>
+            
+            <div>
+                <h3>Current Triggers</h3>
+                <ul>    
+                    <% for(trigger of triggers){ %>
+                        <li>
+                            <%= trigger.name %>
+                            <%= trigger.option %>
+                            <%= trigger.value %>
+                        </li>
+                    <% }; %>
+                </ul>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>

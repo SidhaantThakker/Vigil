@@ -1,0 +1,24 @@
+{
+  "name": "vigil",
+  "version": "1.0.0",
+  "description": "- socketio connection\r ## Logic\r - set triggers\r - check triggers\r ## Database\r - store triggers\r ## Output\r - print statement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SidhaantThakker/Vigil.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SidhaantThakker/Vigil/issues"
+  },
+  "homepage": "https://github.com/SidhaantThakker/Vigil#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "ws": "^8.4.0"
+  }
+}
